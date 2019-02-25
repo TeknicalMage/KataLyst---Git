@@ -30,7 +30,7 @@ broken = 2
 
 bot = commands.Bot(command_prefix=";")
 sh = gc.create(current)
-
+sxrwewer
 
 @bot.event  
 async def on_ready():
@@ -41,7 +41,7 @@ async def on_ready():
     
     
 @bot.event
-async def on_message(message):
+async on_message(message):
     it = time.asctime(time.localtime(time.time()))
     global broken
     server = message.server  
@@ -71,7 +71,6 @@ async def ping(ctx):
     else:
         await bot.say("No u")
     print ("user has pinged")
-    
     
 @bot.command(pass_context=True)
 async def join(ctx):
